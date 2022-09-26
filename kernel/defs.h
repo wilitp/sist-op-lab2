@@ -9,6 +9,12 @@ struct sleeplock;
 struct stat;
 struct superblock;
 
+// sem.c
+int sem_open(int sem, int value);
+int sem_close(int sem);
+int sem_up(int sem);
+int sem_down(int sem);
+
 // bio.c
 void            binit(void);
 struct buf*     bread(uint, uint);

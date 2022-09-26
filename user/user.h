@@ -23,6 +23,11 @@ char* sbrk(int);
 int sleep(int);
 int uptime(void);
 
+int sem_open(int sem, int value);
+int sem_close(int sem);
+int sem_up(int sem);
+int sem_down(int sem);
+
 // ulib.c
 int stat(const char*, struct stat*);
 char* strcpy(char*, const char*);
